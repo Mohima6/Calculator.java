@@ -8,7 +8,7 @@ public class AreaVolume {
     //circle
     public static void circle() {
            Scanner scanner = new Scanner(System.in);
-           System.out.println("Enter radius of the circle:");
+           System.out.println("Enter radius:");
            double radius = scanner.nextDouble();
            double area = Math.PI * radius * radius;
            double perimeter = 2 * Math.PI * radius;
@@ -20,7 +20,7 @@ public class AreaVolume {
     //rhombus
     public static void rhombus() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter diagonals of rhombus:");
+        System.out.println("Enter diagonals :");
         double d1 = scanner.nextDouble();
         double d2 = scanner.nextDouble();
         double area = (d1 * d2) / 2 ;
@@ -32,7 +32,7 @@ public class AreaVolume {
     //rectangle
     public static void rectangle() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter length and width of rectangle: ");
+        System.out.println("Enter length and width : ");
         double length = scanner.nextDouble();
         double width = scanner.nextDouble();
         double area = length * width ;
@@ -44,10 +44,10 @@ public class AreaVolume {
     //triangle
     public static void triangle() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter base & height of the triangle:");
+        System.out.println("Enter base & height :");
         double base = scanner.nextDouble();
         double height = scanner.nextDouble();
-        System.out.println("Enter the lengths of the three sides of the triangle");
+        System.out.println("Enter the lengths of the three sides: ");
         double side1 = scanner.nextDouble();
         double side2 = scanner.nextDouble();
         double side3 = scanner.nextDouble();
@@ -60,7 +60,7 @@ public class AreaVolume {
     //square
     public static void square() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter side of the square:");
+        System.out.println("Enter side: ");
         double side = scanner.nextDouble();
         double area = side * side;
         double perimeter = 4 * side;
@@ -71,7 +71,7 @@ public class AreaVolume {
     //trapezium
     public static void trapezium() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the lengths of parallel sides & height of trapezium:");
+        System.out.println("Enter the lengths of parallel sides & height : ");
         double a = scanner.nextDouble();
         double b = scanner.nextDouble();
         double height = scanner.nextDouble();
@@ -82,10 +82,10 @@ public class AreaVolume {
     //parallelogram
     public static void parallelogram() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter base & height of the parallelogram:");
+        System.out.println("Enter base & height: ");
         double base = scanner.nextDouble();
         double height = scanner.nextDouble();
-        System.out.println("Enter side length of the parallelogram:");
+        System.out.println("Enter side length: ");
         double side = scanner.nextDouble(); 
         double area = base * height ;
         double perimeter = 2 * (base+height);
@@ -96,11 +96,11 @@ public class AreaVolume {
     //cylinder
     public static void cylinder() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter radius & height of the cylinder:");
+        System.out.println("Enter radius & height: ");
         double radius = scanner.nextDouble();
         double height = scanner.nextDouble();
         double volume = Math.PI * radius * radius * height;
-        double surfaceArea = 2 * Math.PI * radius * (radius+height);
+        double surfaceArea = 2 * Math.PI * radius * (radius + height);
         System.out.println("Volume of Cylinder: " + volume);
         System.out.println("Surface Area of Cylinder: " + surfaceArea);
 
@@ -109,11 +109,11 @@ public class AreaVolume {
     //square root
     public static void squareRoot() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a number to calculate its square root:");
+        System.out.println("Enter a number: ");
         double number = scanner.nextDouble();
         if (number<0) {
 
-     System.out.println("Error!Negative numbers do not have real square roots.");
+     System.out.println("Negative numbers do not have real square roots.");
         } else{
             double result = Math.sqrt(number);
             System.out.println("Square root of " + number + "is: " + result);
@@ -123,7 +123,7 @@ public class AreaVolume {
     //cube root
     public static void cubeRoot() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a number to calculate its cube root:");
+        System.out.println("Enter a number: ");
         double number = scanner.nextDouble();
         double result = Math.cbrt(number);
         System.out.println("Cube root of" + number + "is: " + result);
@@ -133,13 +133,13 @@ public class AreaVolume {
     //nth root
     public static void nthRoot() {
          Scanner scanner = new Scanner(System.in);
-         System.out.println("Enter the number to find the N-th Root:");
+         System.out.println("Enter the number: ");
          double number = scanner.nextDouble();
-         System.out.println("Enter the value of N(root):");
+         System.out.println("Enter the value of n(root):");
          double n = scanner.nextDouble();
 
          if (number < 0  && n % 2 == 0) {
-    System.out.println("Error! Cannot calculate the N-th root of a negative number when N is even.");
+    System.out.println("Cannot calculate the n-th root of a negative number when n is even.");
 
          } else {
             double result = Math.pow(number, 1.0 / n);
@@ -155,7 +155,7 @@ public class AreaVolume {
 
         while (true) {
             
-            System.out.println("\nSelect the shape to calculate or Root:");
+            System.out.println("\nSelect: ");
             System.out.println("1. Circle");
             System.out.println("2. Rhombus");
             System.out.println("3. Rectangle");
@@ -220,7 +220,7 @@ public class AreaVolume {
 
                 case 12:
                 System.out.println("Exiting...");
-                return; //exit the program
+                return; 
 
 
                 default:
