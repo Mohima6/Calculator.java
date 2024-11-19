@@ -9,7 +9,7 @@ public class DomainRange {
 
     public static void main(String[] args) {
         // Setup main frame
-        JFrame frame = new JFrame("Domain and Range Calculator");
+        JFrame frame = new JFrame("Domain-Range Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 500);
         frame.setLayout(new BorderLayout());
