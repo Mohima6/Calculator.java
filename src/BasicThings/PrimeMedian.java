@@ -53,7 +53,7 @@ public class PrimeMedian {
                     break;
 
                 case 8:
-                    System.out.println("Exiting program.");
+                    System.out.println("Thank u.Come again!");
                     scanner.close();
                     return;
             
